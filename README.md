@@ -118,4 +118,4 @@ Reports are rendered with `echo: true` and `embed-resources: true`, so the HTML 
 
 ## License
 
-MIT License available in the file <LICENSE.md>
+MIT License available in the main repo

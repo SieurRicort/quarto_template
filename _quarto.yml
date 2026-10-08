@@ -1,6 +1,6 @@
 project:
   type: default
-  output-dir: final_html
+  output-dir: html_output
 
 format:
   html:

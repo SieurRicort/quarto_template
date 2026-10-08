@@ -9,6 +9,7 @@ date-modified: today
 metadata:
   analysis-type: "Bioinformatics"
   status: "Planned/In progress/On hold/Under review/Finished/Archived"
+  template-version: "0.1.0"
 ---
 
 ------------------------------------------------------------------------

@@ -1,0 +1,35 @@
+/* Main analysis headings */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Goal heading */
+.goal-heading {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Code heading */
+h3.code-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #234a78;
+  border-left: 4px solid #234a78;
+  padding-left: 10px;
+}
+
+/* Outputs heading */
+h3.output-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #47765b;
+  border-left: 4px solid #47765b;
+  padding-left: 10px;
+}
+
+/* Personal notes heading */
+h3.notes-heading {
+  font-size: 18px;
+  font-weight: 400;
+}

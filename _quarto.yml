@@ -1,0 +1,19 @@
+project:
+  type: default
+  output-dir: _output
+
+format:
+  html:
+    css: styles.css
+    theme: cosmo
+    toc: true
+    number-sections: true
+    number-depth: 2
+    embed-resources: true
+
+execute:
+  echo: true
+  warning: false
+  message: false
+
+jupyter: python3

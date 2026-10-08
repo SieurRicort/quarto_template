@@ -1,0 +1,37 @@
+---
+title: "Bioinformatics analysis"
+---
+
+## Analysis name
+
+<div class="goal-heading">Goal</div>
+
+Briefly describe what I want to do.
+
+---
+
+### Code {.code-heading}
+
+```{python}
+# Code here
+```
+
+### Outputs {.output-heading}
+
+```{python}
+#| echo: false
+
+# Display only the results worth keeping
+```
+
+---
+
+::: {.callout-note collapse="true"}
+
+### Personal notes {.notes-heading}
+
+- **Observations:**
+- **To investigate:**
+- **Decisions / takeaway:**
+
+:::

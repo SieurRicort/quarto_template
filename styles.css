@@ -1,37 +1,8 @@
+
 /* Main analysis headings */
 h2 {
   font-size: 24px;
   font-weight: 700;
-}
-
-/* Goal heading */
-.goal-heading {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-/* Code heading */
-h3.code-heading {
-  font-size: 20px;
-  font-weight: 700;
-  color: #234a78;
-  border-left: 4px solid #234a78;
-  padding-left: 10px;
-}
-
-/* Outputs heading */
-h3.output-heading {
-  font-size: 20px;
-  font-weight: 700;
-  color: #47765b;
-  border-left: 4px solid #47765b;
-  padding-left: 10px;
-}
-
-/* Personal notes heading */
-h3.notes-heading {
-  font-size: 18px;
-  font-weight: 400;
 }
 
 /* Document-level description */
@@ -40,34 +11,63 @@ h3.notes-heading {
   color: #606b78;
   line-height: 1.6;
   margin-top: -8px;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
   max-width: 900px;
 }
 
-/* Goal block for each analysis */
-.goal-heading {
-  font-size: 18px;
-  font-weight: 600;
-  color: #234a78;
-  background-color: #f2f6fa;
-  border-left: 4px solid #234a78;
-  padding: 10px 14px;
-  margin-top: 12px;
-  margin-bottom: 8px;
-  border-radius: 3px;
-}
-
+/* Goal block */
 .goal-block {
   font-size: 16px;
-  line-height: 1.6;
-  background-color: #f2f6fa;
-  border-left: 4px solid #234a78;
-  padding: 12px 16px;
-  margin: 12px 0 20px;
+  line-height: 1.5;
+  background-color: #e3ebe9;
+  border-left: 4px solid #507b86;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
   border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.goal-block p {
+  margin: 4px 0;
 }
 
 .goal-block strong {
-  color: #234a78;
+  color: #507b86;
   font-size: 18px;
+}
+
+/* Code heading */
+h3.code-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #001B57;
+  border-left: 4px solid #001B57;
+  padding-left: 10px;
+}
+
+/* Outputs heading */
+h3.output-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #001B57;
+  border-left: 4px solid #001B57;
+  padding-left: 10px;
+}
+
+/* Personal notes heading */
+h3.notes-heading {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Personal notes subheadings */
+.callout-note p strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Personal notes content */
+.callout-note li,
+.callout-note p {
+  font-size: 14px;
 }

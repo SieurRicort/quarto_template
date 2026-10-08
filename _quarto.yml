@@ -1,6 +1,7 @@
 project:
   type: default
-  output-dir: _output
+  output-dir: final_html
+  pre-render: scripts/my_env.py
 
 format:
   html:

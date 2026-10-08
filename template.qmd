@@ -1,25 +1,34 @@
 ---
-title: "To be modified"
-description: "To be modified"
+title: "Title"
+description: "Description"
+author: "Your name"
+
+date: "To be modified"
+date-modified: today
+
+metadata:
+  analysis-type: "Bioinformatics"
+  status: "Planned/In progress/On hold/Under review/Finished/Archived"
 ---
+
+------------------------------------------------------------------------
 
 ## Analysis name
 
 ::: goal-block
-**Goal**
-
-Briefly describe what I want to do.
+**Goal**\
+Why?\
+How?\
+Expected outcomes?
 :::
 
-------------------------------------------------------------------------
-
-### Code {.code-heading}
+### Script {.code-heading}
 
 ```{python}
 # Code here
 ```
 
-### Outputs {.output-heading}
+### Results {.output-heading}
 
 ```{python}
 #| echo: false
@@ -30,9 +39,12 @@ Briefly describe what I want to do.
 ------------------------------------------------------------------------
 
 ::: {.callout-note collapse="true"}
-### Personal notes {.notes-heading}
+### Personal notes
 
-- **Observations:**
-- **To investigate:**
-- **Decisions / takeaway:**
+**Observations**\
+Add something here\
+**Questions/limitations**\
+Add something here\
+**Perspectives**\
+Add something here
 :::

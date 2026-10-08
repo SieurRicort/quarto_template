@@ -8,11 +8,12 @@ A reusable [Quarto](https://quarto.org) template for documenting bioinformatics 
 .
 ├── template.qmd        # Copy this for each new analysis
 ├── .gitignore          # To not push everything
+├── LICENSE
 ├── _quarto.yml         # Project settings (theme, TOC, execution options)
 ├── styles.css          # Custom styling
 ├── scripts/
 │   └── my_env.py       # Builds the Environment table
-├── final_html/         # Finished, rendered reports
+├── html_output/         # Finished, rendered reports
 └── README.md
 ```
 
@@ -34,8 +35,8 @@ Clone this repository **once** somewhere on your machine, and copy what you need
 
 ```bash
 git clone https://github.com/SieurRicort/quarto_template ~/quarto_template        # once
-mkdir -p /true/path/to/my_project # otherwise cp fails
-cp -r ~/quarto_template/{template.qmd,.gitignore,_quarto.yml,styles.css,scripts} /true/path/to/my_project   # once per project
+mkdir -p ~/projects/my_project # otherwise cp fails
+cp -r ~/quarto_template/{template.qmd,.gitignore,_quarto.yml,styles.css,scripts} ~/projects/my_project   # once per project (true path advised)
 ```
 
 To pick up template updates, run `git pull` in `~/quarto_template`. Existing projects are **not** updated automatically, which is intentional: an old report keeps the template version it was written with. Releases are tagged (`v0.1.0`, `v0.2.0`, ...), so you can note which version a project started from.
@@ -80,7 +81,7 @@ In VS Code, select the interpreter with `Ctrl+Shift+P` → *Python: Select Inter
    quarto render my_analysis.qmd
    ```
 
-The result is a single HTML file written to the `html_output` set in `_quarto.yml`.
+The result is a single HTML file written to `html_output` (set in `_quarto.yml`: project -> output-dir).
 
 ## The Environment table
 
@@ -118,4 +119,4 @@ Reports are rendered with `echo: true` and `embed-resources: true`, so the HTML 
 
 ## License
 
-MIT License available in the main repo
+MIT License, see the [LICENSE](https://github.com/SieurRicort/quarto_template/blob/main/LICENSE) file.

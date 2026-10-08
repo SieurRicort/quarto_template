@@ -1,8 +1,7 @@
 # Rendered reports: share separately after checking for sensitive content
-# This exclude everything inside the output dir set in _quarto.yml
-html_output/
-# Safety net
-*.hmtl
+# Excludes everything inside the output-dir set in _quarto.yml, except one example
+html_output/*
+*.html
 !html_output/template.html
 
 # Python caches
@@ -10,6 +9,7 @@ __pycache__/
 *.pyc
 
 # Quarto / Jupyter generated files
+**/*.quarto_ipynb
 .quarto/
 *_files/
 .ipynb_checkpoints/
@@ -36,6 +36,3 @@ data/
 *.vcf.gz
 *.h5ad
 *.rds
-
-/.quarto/
-**/*.quarto_ipynb

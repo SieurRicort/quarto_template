@@ -1,3 +1,32 @@
-/.quarto/
-**/*.quarto_ipynb
-_metadata.yml
+# Python caches
+__pycache__/
+*.pyc
+
+# Quarto / Jupyter generated files
+.quarto/
+_output/
+*_files/
+.ipynb_checkpoints/
+.jupyter_cache/
+
+# Secrets and local config
+.env
+*.key
+*.pem
+credentials*
+
+# Editor / OS junk
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Data (adapt to what you use)
+data/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.cram
+*.vcf.gz
+*.h5ad
+*.rds

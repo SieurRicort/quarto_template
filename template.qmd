@@ -48,3 +48,23 @@ Add something here\
 **Perspectives**\
 Add something here
 :::
+
+------------------------------------------------------------------------
+
+::: {.callout-note collapse="true"}
+### Environment
+
+```{python}
+#| echo: false
+import sys
+sys.path.insert(0, "scripts")
+from my_env import environment_table
+
+# ---- EDIT PER ANALYSIS (leave empty if unused) ----
+tools = []      # e.g. ["samtools", "bwa", "STAR"]
+packages = []   # e.g. ["pandas", "numpy"]
+# ---------------------------------------------------
+
+environment_table(tools=tools, packages=packages)
+```
+:::

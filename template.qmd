@@ -1,14 +1,17 @@
 ---
-title: "Bioinformatics analysis"
+title: "To be modified"
+description: "To be modified"
 ---
 
 ## Analysis name
 
-<div class="goal-heading">Goal</div>
+::: goal-block
+**Goal**
 
 Briefly describe what I want to do.
+:::
 
----
+------------------------------------------------------------------------
 
 ### Code {.code-heading}
 
@@ -24,14 +27,12 @@ Briefly describe what I want to do.
 # Display only the results worth keeping
 ```
 
----
+------------------------------------------------------------------------
 
 ::: {.callout-note collapse="true"}
-
 ### Personal notes {.notes-heading}
 
 - **Observations:**
 - **To investigate:**
 - **Decisions / takeaway:**
-
 :::

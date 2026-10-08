@@ -33,3 +33,41 @@ h3.notes-heading {
   font-size: 18px;
   font-weight: 400;
 }
+
+/* Document-level description */
+.document-description {
+  font-size: 16px;
+  color: #606b78;
+  line-height: 1.6;
+  margin-top: -8px;
+  margin-bottom: 28px;
+  max-width: 900px;
+}
+
+/* Goal block for each analysis */
+.goal-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #234a78;
+  background-color: #f2f6fa;
+  border-left: 4px solid #234a78;
+  padding: 10px 14px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+
+.goal-block {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f2f6fa;
+  border-left: 4px solid #234a78;
+  padding: 12px 16px;
+  margin: 12px 0 20px;
+  border-radius: 3px;
+}
+
+.goal-block strong {
+  color: #234a78;
+  font-size: 18px;
+}

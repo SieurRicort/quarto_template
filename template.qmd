@@ -3,16 +3,17 @@ title: "Title"
 description: "Description"
 author: "Your name"
 
-date: "To be modified"
+date: "2026-10-08"
 date-modified: today
 
 metadata:
   analysis-type: "Bioinformatics"
   status: "Planned/In progress/On hold/Under review/Finished/Archived"
-  template-version: "0.1.0"
+  template-version: "0.3.0"
 ---
 
 ------------------------------------------------------------------------
+
 ### Setup
 
 ```{python}
@@ -20,7 +21,7 @@ metadata:
 ```
 
 ```{python}
-#| echo: false
+#|echo: false
 # Used to display the outputs below a command in ### Results
 import sys
 sys.path.insert(0, "scripts")
@@ -45,7 +46,7 @@ Expected outcomes?
 ### Results {.output-heading}
 
 ```{python}
-#| echo: false
+#|echo: false
 %%show
 # Display what command ran with its output directly below
 # MUST START WITH %%show

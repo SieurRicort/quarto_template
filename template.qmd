@@ -46,9 +46,9 @@ Expected outcomes?
 
 ```{python}
 #| echo: false
+%%show
 # Display what command ran with its output directly below
 # MUST START WITH %%show
-%%show 
 # Add a command here
 ```
 

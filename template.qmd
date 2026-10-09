@@ -29,7 +29,8 @@ candidates = [Path.cwd(), *Path.cwd().parents]
 root = next((p for p in candidates if (p / "scripts" / "display_results.py").exists()), None)
 if root is None:
     raise FileNotFoundError("Open the quarto_template folder (the one containing scripts/) and restart the kernel.")
-sys.path.insert(0, str(root / "scripts"))       
+sys.path.insert(0, str(root / "scripts"))
+import display_results      
 ```
 
 ## Analysis name

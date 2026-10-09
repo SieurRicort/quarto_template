@@ -13,6 +13,19 @@ metadata:
 ---
 
 ------------------------------------------------------------------------
+### Setup
+
+```{python}
+# Setup global variables, import some functions, do your stuff
+```
+
+```{python}
+#| echo: false
+# Used to display the outputs below a command in ### Results
+import sys
+sys.path.insert(0, "scripts")
+import display_results          
+```
 
 ## Analysis name
 
@@ -33,8 +46,10 @@ Expected outcomes?
 
 ```{python}
 #| echo: false
-
-# Display only the results worth keeping
+# Display what command ran with its output directly below
+# MUST START WITH %%show
+%%show 
+# Add a command here
 ```
 
 ------------------------------------------------------------------------

@@ -36,3 +36,5 @@ data/
 *.vcf.gz
 *.h5ad
 *.rds
+
+/.quarto/

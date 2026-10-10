@@ -5,16 +5,19 @@ A reusable [Quarto](https://quarto.org) template for documenting bioinformatics 
 ## Repository structure
 
 ```
+tree
 .
-├── template.qmd        # Copy this for each new analysis
-├── .gitignore          # To not push everything
-├── LICENSE
-├── _quarto.yml         # Project settings (theme, TOC, execution options)
-├── styles.css          # Custom styling
-├── scripts/
-│   └── my_env.py       # Builds the Environment table
-├── html_output/         # Finished, rendered reports
-└── README.md
+├── LICENSE   # Licence for reuse
+├── README.md   # This file
+├── _quarto.yml   # Quarto project settings (output format, theme, options)
+├── html_output
+│   └── template.html   # Example of the rendered report
+├── import_me.sh   # Setup script (imports the template into a new project)
+├── scripts
+│   ├── display_results.py   # Script in the setup part -> displays results in the report the following : > cmd then outputs next line
+│   └── my_env.py   # Script that runs in the last code cell -> Environment in which everything ran
+├── styles.css   # Custom styling for the HTML output
+└── template.qmd   # The report template: copy and edit this file
 ```
 
 ## Requirements
@@ -31,12 +34,13 @@ Notes:
 
 ## Getting the template
 
-Clone this repository **once** somewhere on your machine, and copy what you need into each new project:
+Clone this repository **once** somewhere on your machine, create your project directory and execute the script `import_me.sh`.
 
 ```bash
-git clone https://github.com/SieurRicort/quarto_template ~/quarto_template        # once
-mkdir -p ~/projects/my_project # otherwise cp fails
-cp -r ~/quarto_template/{template.qmd,.gitignore,_quarto.yml,styles.css,scripts} ~/projects/my_project   # once per project (true path advised)
+git clone https://github.com/SieurRicort/quarto_template ~/quarto_template        # Once
+mkdir -p ~/projects/my_project   # Make sure you create the directory you want to work in
+cd ~/projects/my_project   # Go to your project directory so you can execute the script that will import everything you need
+/true/path/to/import_me.sh   # Will import everything needed for you to start working on the template in your working project
 ```
 
 To pick up template updates, run `git pull` in `~/quarto_template`. Existing projects are **not** updated automatically, which is intentional: an old report keeps the template version it was written with. Releases are tagged (`v0.1.0`, `v0.2.0`, ...), so you can note which version a project started from.

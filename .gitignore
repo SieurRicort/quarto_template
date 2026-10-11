@@ -22,7 +22,8 @@ __pycache__/
 credentials*
 
 # Editor / OS
-.vscode/
+.vscode/*
+!.vscode/*.code-snippets
 .DS_Store
 Thumbs.db
 

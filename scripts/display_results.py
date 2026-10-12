@@ -1,14 +1,14 @@
 """Cell magic %%show: display each statement of a cell followed by its result.
 
 Usage in a .qmd file:
-
+    # 1. Use py_display_results above all code cells in setup.
     ```{python}
     #| echo: false
     import sys
     sys.path.insert(0, "scripts")
-    import results          # registers the %%show magic
+    import display_results          # registers the %%show magic
     ```
-
+    # 2. Have this cell code below any script when you want to print some outputs in your report.
     ```{python}
     #| echo: false
     %%show

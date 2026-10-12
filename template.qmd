@@ -14,11 +14,7 @@ metadata:
 
 ------------------------------------------------------------------------
 
-### Setup
-
-```{python}
-# Setup global variables, import some functions, do your stuff
-```
+### Python setup to display results
 
 ```{python}
 #|echo: false
@@ -30,8 +26,10 @@ root = next((p for p in candidates if (p / "scripts" / "display_results.py").exi
 if root is None:
     raise FileNotFoundError("Open the quarto_template folder (the one containing scripts/) and restart the kernel.")
 sys.path.insert(0, str(root / "scripts"))
-import display_results      
+import display_results
 ```
+
+
 
 ## Analysis name
 
@@ -88,4 +86,3 @@ packages = []   # e.g. ["pandas", "numpy"]
 environment_table(tools=tools, packages=packages)
 ```
 :::
-

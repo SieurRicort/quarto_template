@@ -13,6 +13,8 @@ FILES=(
   _quarto.yml
   styles.css
   scripts
+  .vscode
+  setup_conda_env.sh
 )
 
 # Resolve the folder containing this script

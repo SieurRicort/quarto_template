@@ -2,9 +2,9 @@
 set -e
 
 # Variables
-name="myproject"    # Change for a new name every time you want a fresh env. Please never use a space between names.
+name="BIO511"    # Change for a new name every time you want a fresh env. Please never use a space between names.
 ver="3.12"    # Bioinformatics = python version should be 3.12
-base_modules=(pip ipython ipykernel jupyter)
+base_modules=(pip ipython ipykernel jupyter plotnine plotly seaborn matplotlib)
 
 # Fresh install with base_modules needed to render on quarto
 if conda env list | awk '{print $1}' | grep -qx "$name"; then

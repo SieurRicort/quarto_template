@@ -10,6 +10,9 @@ format:
     number-sections: true
     number-depth: 2
     embed-resources: true
+    code-block-bg: "#9CADC9"
+    code-block-border-left: "#979BCE"
+    syntax-highlighting: dracula
 
 execute:
   echo: true

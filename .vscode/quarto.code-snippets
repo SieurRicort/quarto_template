@@ -1,6 +1,7 @@
 {
+  // ----------------------- PYTHON -------------------------------------------
   "Python analysis": {
-    "prefix": "qblockpy",
+    "prefix": "py_analysis",
     "scope": "quarto",
     "description": "Full analysis section: goal, script, results (%%show), personal notes",
     "body": [
@@ -44,16 +45,17 @@
       "$0"
     ]
   },
+
   "Python %%show setup": {
-    "prefix": "py_display_results",
+    "prefix": "py_setup_show",
     "scope": "quarto",
     "description": "Will setup the script to display results using the script display_results.py",
     "body": [
-      "### ${1:Python setup to display results}",
+      "### ${1:Results}",
       "",
       "```{python}",
       "#|echo: false",
-      "# Used to display the outputs below a command in ### Results",
+      "%%show",
       "import sys",
       "from pathlib import Path",
       "candidates = [Path.cwd(), *Path.cwd().parents]",
@@ -66,5 +68,26 @@
       "",
       "$0"
     ]
-  }
+  },
+
+  "Python %%show code cell": {
+    "prefix": "py_show",
+    "scope": "quarto",
+    "description": "Will input a code cell to display results you want to print among with their commands",
+    "body": [
+      "### ${1:Results}",
+      "",
+      "```{python}",
+      "#|echo: false",
+      "%%show",
+      "$2#Add a command here",
+      "```",
+      "",
+      "$0"
+    ]
+  },
+
+  //  ---------------------- R ----------------------------
+
+  // ----------------------- Bash -------------------------
 }

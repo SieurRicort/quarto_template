@@ -10,6 +10,7 @@ metadata:
   analysis-type: "Bioinformatics"
   status: "Planned/In progress/On hold/Under review/Finished/Archived"
   template-version: "0.3.0"
+
 ---
 
 ------------------------------------------------------------------------
@@ -29,43 +30,14 @@ sys.path.insert(0, str(root / "scripts"))
 import display_results
 ```
 
-
-
-## Analysis name
-
-::: goal-block
-**Goal**\
-Why?\
-How?\
-Expected outcomes?
-:::
-
-### Script {.code-heading}
-
-```{python}
-# Code here
-```
-
-### Results {.output-heading}
+### Results
 
 ```{python}
 #|echo: false
 %%show
-# Display what command ran with its output directly below
-# MUST START WITH %%show
-# Add a command here
+print("hello word")
 ```
 
-::: {.callout-note collapse="true"}
-### Personal notes
-
-**Observations**\
-Add something here\
-**Questions/limitations**\
-Add something here\
-**Perspectives**\
-Add something here
-:::
 
 ------------------------------------------------------------------------
 
